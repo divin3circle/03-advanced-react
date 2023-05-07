@@ -11,7 +11,13 @@ const MultipleReturnsFetchData = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
+        if (!response.ok) {
+          setIsError(true);
+          setIsLoading(false);
+          return;
+        }
         const user = await response.json();
+
         setUser(user);
       } catch (error) {
         setIsError(true);
@@ -30,16 +36,18 @@ const MultipleReturnsFetchData = () => {
     return <h2>An error occured!</h2>;
   }
 
+  const { avatar_url, name, company, bio } = user;
+
   return (
     <div>
       <img
-        src={user.avatar_url}
+        src={avatar_url}
         style={{ width: "150px", borderRadius: "15px" }}
-        alt={user.name}
+        alt={name}
       />
-      <h2>{user.name}</h2>
-      <h4>Works at {user.company}</h4>
-      <p>{user.bio}</p>
+      <h2>{name}</h2>
+      <h4>Works at {company}</h4>
+      <p>{bio}</p>
     </div>
   );
 };
