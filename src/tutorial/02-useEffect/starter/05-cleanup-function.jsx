@@ -16,13 +16,9 @@ const CleanupFunction = () => {
 
 const AnotherComponent = () => {
   useEffect(() => {
-    console.log("Another component");
-    const intId = setInterval(() => {
-      console.log("Current");
-    }, 1000);
-    return () => {
-      clearInterval(intId);
-    };
+    const someFunction = () => {};
+    window.addEventListener("scroll", someFunction);
+    return () => window.removeEventListener("scroll", someFunction);
   }, []);
   return <h1>Hello world</h1>;
 };
