@@ -1,5 +1,5 @@
 /* import Starter from "./tutorial/01-useState/starter/02-useState-basics"; */
-import Starter from "./tutorial/03-conditional-rendering/starter/06-toggle-challenge";
+import Starter from "./tutorial/02-useEffect/starter/05-cleanup-function";
 
 function App() {
   return (
