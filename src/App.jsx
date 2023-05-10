@@ -1,9 +1,9 @@
-import Example from "./tutorial/04-project-structure/starter/example";
+import ControlledInputs from "./tutorial/06-forms/starter/02-user-challenge";
 
 function App() {
   return (
     <div className="container">
-      <Example />
+      <ControlledInputs />
     </div>
   );
 }
