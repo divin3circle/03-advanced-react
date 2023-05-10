@@ -7,7 +7,7 @@ const UserChallenge = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name) return;
+    if (!name) return alert("Please enter a name");
     const fakeId = Date.now();
     const newUser = {
       id: fakeId,
