@@ -1,5 +1,5 @@
 # React - Advanced Concepts
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJEX7BaY5tTO8JM20pTSIS6cvzoq5k89Ao8cNEoi51V/ sylus.abel@icloud.com
+
 ## React Course
 
 [My React Course](https://www.udemy.com/course/react-tutorial-and-projects-course/?referralCode=FEE6A921AF07E2563CEF)
